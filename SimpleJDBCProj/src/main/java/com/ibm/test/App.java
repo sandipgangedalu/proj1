@@ -22,7 +22,7 @@ public class App {
 			ps=con.prepareStatement("SELECT COUNT(*) FROM EMP");
 		  rs=	ps.executeQuery();
 			rs.next();
-			System.out.println(rs.getInt(1));
+			System.out.println(rs.getInt(1));//count value is coming
 		
         } catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
