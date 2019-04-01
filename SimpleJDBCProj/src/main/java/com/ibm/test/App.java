@@ -20,9 +20,9 @@ public class App {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
 			ps=con.prepareStatement("SELECT COUNT(*) FROM EMP");
-		rs=	ps.executeQuery();
+		  rs=	ps.executeQuery();
 			rs.next();
-			System.out.println(rs.getInt(1));
+			System.out.println(rs.getInt(1));//it gives count no.
 		
         } catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
